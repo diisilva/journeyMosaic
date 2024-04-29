@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  journey_mosaic:
+    container_name: journey_mosaic
+    image: postgis/postgis:latest
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: mos@ic_admin
+      POSTGRES_DB: journey_mosaic_db
+    ports:
+      - "5430:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - journey_mosaic_network
+
+volumes:
+  postgres-data:
+
+networks:
+  journey_mosaic_network: 
