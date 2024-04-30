@@ -34,23 +34,21 @@ To install journeyMosaic, follow these steps:
 
 ## Connecting to the Database
 
+**This database is already online, hosted on an EC2 instance within AWS, and it is possible to connect to it using the credentials available in settings/config.txt.**
 To connect to the database using DBeaver:
 
 1. Open DBeaver.
 2. Click on "New Database Connection".
 3. Choose PostgreSQL as the database type.
 4. Fill in the connection settings with the following details:
-    - Host: `localhost`
-    - Port: `5430` (or the port you have set in your `docker-compose.yml` file)
-    - Database: `journey_mosaic_db`
-    - Username: `admin`
-    - Password: `mos@ic_admin`
+    - Host: read settings/config.txt
+    - Port: `read settings/config.txt
+    - Database: read settings/config.txt
+    - Username: read settings/config.txt
+    - Password: read settings/config.txt
 5. Click on "Test Connection" to ensure everything is set up correctly.
-6. Click "Finish" to establish the connection.
 
-    ![DBeaver Connection Setup](src_readme/dbeaver.png)
-
-5.  Entity-Relationship Diagram.
+6.  Entity-Relationship Diagram.
 
     ![DER](src_readme/DER.png)
 
@@ -59,9 +57,9 @@ To connect to the database using DBeaver:
 To contribute to journeyMosaic, follow these steps:
 
 1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
+2. Create a branch: `git checkout -b MinhaNovaBrach (name your new branch)`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
+4. Push to the original branch: `git push --set-upstream origin MinhaNovaBrach`;
 5. Create the pull request.
 
 Alternatively, see the GitHub documentation on [creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).

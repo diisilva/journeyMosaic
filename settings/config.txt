@@ -1,0 +1,6 @@
+ Fill in the connection settings with the following details:
+    - Host: `ec2-52-67-251-110.sa-east-1.compute.amazonaws.com`
+    - Port: `5430`
+    - Database: `journey_mosaic_db`
+    - Username: `admin`
+    - Password: `mos@ic_admin`
